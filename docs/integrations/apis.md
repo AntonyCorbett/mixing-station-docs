@@ -64,7 +64,7 @@ Websocket requests use the following json scheme:
 ```
 
 Where `path` is the path of the API endpoint that you want to call, `method` is the
-corresponding http method and `body` the payload.
+corresponding http method and `body` is the payload.
 
 The response will look like this:
 
@@ -84,10 +84,10 @@ error messages that occurred during processing your request.
 
 To receive value updates you'll need to subscribe first.
 A subscription describes a parameter path for which the client will
-receive updates in case of values changes.
+receive updates in case of value changes.
 Requesting a new subscription will also send you the initial value(s).
 
-Examples for value subscriptions can be found below in the [examples section](#examples).
+Examples of value subscriptions can be found below in the [examples section](#examples).
 
 ## OSC
 
@@ -108,7 +108,7 @@ The following syntax is used to describe the OSC packets:
 ### Subscribe
 
 Send the following packet at least once every 5 seconds to get updates for all parameters.
-The last char determines the formatting
+The last char determines the formatting.
 
 Plain value
 
@@ -124,7 +124,7 @@ Normalized value
 
 ### Get data
 
-A OSC packet without any parameters is used to request the current value.
+An OSC packet without any parameters is used to request the current value.
 
 ```
 /con/[vn]/{dataPath}
@@ -162,8 +162,8 @@ Subscribe to the fader value of all channels:
 ### OSC
 
 This section shows example OSC packets.
-Please keep in mind that OSC packets needs to
-be [properly padded](https://opensoundcontrol.stanford.edu/spec-1_0.html#introduction)
+Please keep in mind that OSC packets need to
+be [properly padded](https://opensoundcontrol.stanford.edu/spec-1_0.html#introduction).
 
 Get fader of ch 1 as dB value
 
